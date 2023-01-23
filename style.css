@@ -1,0 +1,696 @@
+/* 
+Google Fonts
+*/
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Quattrocento:wght@400;700&display=swap");
+
+/* 
+Fonts
+font-family: 'Oswald', sans-serif;
+font-family: 'Quattrocento', serif;
+*/
+
+/* 
+Basic CSS
+*/
+body {
+  background-color: #1c1c20;
+  font-family: "Quattrocento", serif;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+}
+p {
+  line-height: 1.6;
+}
+
+/* 
+Basic CSS Ends
+*/
+
+/* 
+Header area CSS starts
+*/
+.header-area {
+  color: #ffffff;
+  padding: 12px 0;
+  border-bottom: 1px solid #363131;
+}
+.header-area img {
+  height: 60px;
+  width: auto;
+  margin-right: 10px;
+}
+.header-area .nav-item a {
+  color: #ffffff;
+  transition: 0.4s;
+  font-size: 20px;
+}
+.header-area .nav-item a:hover {
+  color: #217c7c;
+}
+.header-text p {
+  margin-bottom: 0;
+  font-size: 13px;
+}
+.header-area .nav-item:nth-child(5) a {
+  background-color: #217c7c;
+}
+.header-area .nav-item:nth-child(5) a:hover {
+  background-color: #363131;
+}
+/* 
+Header area CSS ends
+*/
+
+/* 
+Hero-area CSS starts
+*/
+.hero-area {
+  padding: 80px 0;
+  z-index: -1;
+  border-bottom: 1px solid #363131;
+}
+.hero-text h4 {
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+.hero-text h3 {
+  font-size: 50px;
+  padding-bottom: 20px;
+}
+.hero-text p {
+  padding-bottom: 20px;
+}
+.hero-text a {
+  background-color: #217c7c;
+  transition: 0.4s;
+}
+.hero-text a:hover {
+  background-color: #363131;
+}
+
+.hero-image {
+  position: relative;
+}
+.hero-image img {
+  padding: 10px;
+  border-radius: 50px 50px 50px 50px;
+}
+
+.hero-image::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  border-radius: 50px 50px 50px 50px;
+  border: 2px solid rgb(128, 125, 125);
+}
+/* 
+Hero Area CSS End
+*/
+
+/* 
+Service Area CSS starts
+ */
+.service-area {
+  padding: 80px 0;
+  border-bottom: 1px solid #363131;
+}
+.service-area h2 {
+  color: white;
+  padding-bottom: 20px;
+  position: relative;
+}
+.service-area h2::after {
+  position: absolute;
+  content: "";
+  height: 50px;
+  width: 50px;
+  background-color: rgb(33, 124, 124);
+  border-radius: 50%;
+  left: -16px;
+  top: 3px;
+  transform: translateY(-20%);
+  z-index: -1;
+}
+.single-service {
+  padding: 40px 25px;
+  box-sizing: border-box;
+  background-color: #363131;
+  border-radius: 10%;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  transition: 1s;
+}
+.single-service:hover {
+  background-color: #217c7c;
+  z-index: 3;
+}
+.single-service::after {
+  position: absolute;
+  content: "";
+  height: 150px;
+  width: 150px;
+  background-color: #217c7c;
+  border-radius: 50%;
+  top: -40px;
+  left: -20px;
+  z-index: -1;
+  transition-duration: 500ms;
+}
+.single-service:hover::after {
+  background-color: #363131;
+  overflow: hidden;
+}
+.single-service i {
+  font-size: 32px;
+  padding-bottom: 50px;
+  z-index: 5;
+}
+.single-service h3 {
+  padding-bottom: 15px;
+}
+.single-service p {
+  margin-bottom: 0;
+  line-height: 1.4;
+}
+
+/*  
+ Service Area CSS Ends
+ */
+
+/* 
+ Work Area CSS starts
+ */
+.work-area {
+  padding: 80px 0;
+  z-index: -2;
+  border-bottom: 1px solid #363131;
+}
+.work-area h2 {
+  position: relative;
+  z-index: 2;
+  padding-bottom: 20px;
+}
+.work-area h2::after {
+  position: absolute;
+  content: "";
+  height: 45px;
+  width: 45px;
+  background-color: rgb(33, 124, 124);
+  border-radius: 50%;
+  left: -16px;
+  top: 6px;
+  transform: translateY(-20%);
+  z-index: -1;
+}
+.work-area .work-skill {
+  background-color: #217c7c;
+  height: 500px;
+  width: auto;
+  padding: 50px 20px;
+  border-radius: 20px 0 0 20px;
+  border: 2px solid rgb(128, 125, 125);
+}
+.work-skill .skill-icon {
+  font-size: 45px;
+  padding-bottom: 30px;
+}
+.work-skill ul {
+  padding-left: 0;
+}
+.work-skill i {
+  padding-right: 20px;
+}
+.work-skill h3 {
+  padding-bottom: 30px;
+}
+.work-skill li {
+  line-height: 2.5;
+  list-style: none;
+}
+.work-area .carousel-item {
+  height: 32rem;
+}
+.work-area .carousel-item img {
+  height: 500px;
+  width: auto;
+  padding: 10px;
+  opacity: 0.7;
+  border: 2px solid rgb(128, 125, 125);
+  position: relative;
+  transition: 0.6s;
+}
+.work-area .carousel-item:hover img {
+  opacity: 0.3;
+}
+.work-area .carousel-item .carousel-caption {
+  opacity: 0;
+  color: #ffffff;
+  position: absolute;
+  content: "";
+  top: 40px;
+  transition: 0.7s;
+}
+.work-area .carousel-item .carousel-caption:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.work-area .carousel-item .carousel-caption h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+}
+.work-area .carousel-item .carousel-caption p {
+  font-size: 30px;
+}
+.work-area .carousel-item .carousel-caption a {
+  text-decoration: none;
+  padding: 6px 12px;
+  background-color: #217c7c;
+  color: #ffffff;
+}
+.work-area .carousel-item .carousel-caption a:hover {
+  background-color: #363131;
+}
+.work-area .carousel-dark .carousel-control-prev-icon {
+  filter: none;
+  background-color: #217c7c;
+  border: 1px solid #18191d;
+  height: 45px;
+  width: 45px;
+  margin: 20px;
+  border-radius: 50%;
+}
+.work-area .carousel-dark .carousel-control-next-icon {
+  filter: none;
+  background-color: #217c7c;
+  border: 1px solid #18191d;
+  height: 45px;
+  width: 45px;
+  margin: 20px;
+  border-radius: 50%;
+}
+.work-area .carousel-dark .carousel-indicators button {
+  background-color: #ffffff;
+  margin-bottom: 20px;
+}
+/* 
+Work Area CSS Completed
+*/
+
+/* 
+Contact Area Starts
+*/
+.contact-area {
+  padding: 80px 0;
+  font-weight: 400;
+}
+.contact-area .box {
+  width: 100%;
+  height: 100%;
+}
+.contact-area h2 {
+  position: relative;
+  padding-bottom: 20px;
+}
+.contact-area h2::after {
+  position: absolute;
+  content: "";
+  height: 45px;
+  width: 45px;
+  background-color: rgb(33, 124, 124);
+  border-radius: 50%;
+  left: -16px;
+  top: 6px;
+  transform: translateY(-20%);
+  z-index: -1;
+}
+
+.contact-image {
+  position: relative;
+  z-index: 1;
+  background-color: #363131;
+  border-radius: 20px 10px 10px 20px;
+}
+.contact-area .contact-image img {
+  width: 100%;
+  opacity: 0.8;
+}
+.contact-area .social-icon {
+  position: absolute;
+  bottom: 25px;
+  border-left-width: -16px;
+  left: 0;
+  right: 0;
+  font-size: 30px;
+}
+.social-icon i {
+  border-radius: 50%;
+  color: #217c7c;
+  padding: 6px;
+  background-color: #363131;
+  border: 2px solid white;
+}
+.social-icon i:hover {
+  background-color: #217c7c;
+  color: #ffffff;
+}
+.contact-area .contact-form {
+  background-color: #217c7c;
+  padding: 30px 30px;
+  border-radius: 10px 30px 30px 10px;
+}
+.contact-form h2 {
+  margin-bottom: 10px;
+}
+.contact-form .btn {
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+.contact-form button:hover {
+  background-color: #363131;
+}
+.contact-form input {
+  background: transparent;
+  color: #ffffff;
+  font-family: "Quattrocento", serif;
+  font-weight: 400;
+}
+.contact-form input:focus {
+  box-shadow: none;
+  background: transparent;
+}
+.contact-form textarea {
+  background: transparent;
+  color: #ffffff;
+  font-family: "Quattrocento", serif;
+  font-weight: 400;
+}
+.contact-form textarea:focus {
+  box-shadow: none;
+  background: transparent;
+}
+div#send-div p {
+  margin-bottom: 0;
+  line-height: 1;
+  font-size: 14px;
+}
+div#send-div {
+  min-height: 26px;
+}
+div#errorDiv p {
+  margin-bottom: 0;
+  line-height: 1;
+  font-size: 14px;
+}
+
+div#errorDiv {
+  min-height: 26px;
+}
+
+/* Contact area CSS ends */
+
+/* 
+preloader area  CSS
+*/
+#preloader-area {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#preloader-area::after,
+#preloader-area::before {
+  position: absolute;
+  content: "";
+  width: 50%;
+  height: 100%;
+  background-color: #363131;
+  opacity: 0.9;
+  z-index: -1;
+  transition: 0.5s ease-in-out;
+}
+#preloader-area::before {
+  left: 0;
+}
+#preloader-area::after {
+  right: 0;
+}
+.page-loaded .spinner-border {
+  display: none;
+}
+#preloader-area.page-loaded::before {
+  left: -50%;
+}
+#preloader-area.page-loaded::after {
+  right: -50%;
+}
+
+/* 
+Footer Area CSS
+*/
+.footer-area {
+  padding: 20px 0;
+  border-top: 1px solid #363131;
+}
+
+/* 
+Footer Area CSS Ends
+*/
+
+@media (max-width: 1199px) {
+  /* 
+  Header area
+  */
+  .header-area .nav-item {
+    font-size: 16px;
+    padding-left: 30px !important;
+  }
+  .header-area .nav-item a {
+    font-size: 17px;
+  }
+
+  /* 
+  Service area
+  */
+  .single-service {
+    padding: 30px 20px;
+  }
+
+  /* 
+  work area
+   */
+  .work-area .carousel-item .carousel-caption h1 {
+    font-size: 40px;
+  }
+  .work-area .carousel-item .carousel-caption p {
+    font-size: 25px;
+  }
+
+  /* 
+  contact area
+  */
+  .contact-image {
+    display: flex;
+    align-items: center;
+  }
+
+  .contact-area .social-icon {
+    bottom: 50px;
+  }
+}
+@media (max-width: 991px) {
+  /* 
+  Header Area
+  */
+  .header-area .navbar-toggler {
+    box-shadow: none !important;
+    padding: 7px;
+    background-color: #217c7c;
+  }
+
+  .header-area .nav-item:nth-child(5) {
+    padding: 15px 0;
+  }
+  .header-area .nav-item {
+    padding-left: 0 !important;
+  }
+  .header-area .nav-link {
+    padding: 5px 0;
+  }
+  .header-area .nav-item a {
+    font-size: 16px;
+    padding: 6px 12px !important;
+  }
+
+  /* 
+  Hero Area
+  */
+  .hero-area {
+    text-align: center;
+    padding: 50px 0;
+  }
+  .hero-text {
+    padding-bottom: 50px;
+  }
+  .hero-text h4 {
+    font-size: 20px;
+    padding-bottom: 15px;
+  }
+  .hero-text h3 {
+    font-size: 30px;
+    line-height: 1.3;
+  }
+  .hero-image::after {
+    width: 100%;
+  }
+
+  /* 
+  Service area
+  */
+  .service-area {
+    padding: 50px 0;
+  }
+  .service-area h2::after {
+    height: 40px;
+    width: 40px;
+    left: -11px;
+    top: 0px;
+  }
+
+  .single-service {
+    padding: 40px 20px;
+    margin-bottom: 30px;
+    margin-right: 10px;
+  }
+
+  /* 
+  work area
+  */
+  .work-area {
+    padding: 50px 0;
+  }
+  .work-area .work-skill {
+    border-radius: 20px 20px 20px 20px;
+    margin-bottom: 30px;
+  }
+  .work-area h2::after {
+    height: 40px;
+    width: 40px;
+    left: -11px;
+    top: 3px;
+  }
+  .work-area .carousel-item img {
+    height: 350px;
+  }
+  .work-area .carousel-item .carousel-caption h1 {
+    font-size: 30px;
+  }
+  .work-area .carousel-item .carousel-caption p {
+    font-size: 20px;
+  }
+  .carousel-caption {
+    height: 300px;
+  }
+  .carousel-control-next,
+  .carousel-control-prev {
+    height: 350px;
+  }
+  .work-area .carousel-item {
+    height: 22rem;
+  }
+  /* 
+  Contact area
+  */
+  .contact-area {
+    padding: 50px 0;
+  }
+  .contact-area h2::after {
+    height: 40px;
+    width: 40px;
+    left: -11px;
+    top: 3px;
+  }
+  .contact-form {
+    margin-top: 30px;
+  }
+  .contact-area .contact-image {
+    border-radius: 20px 20px 0 0;
+  }
+  .contact-area .contact-form {
+    border-radius: 0 0 20px 20px;
+  }
+  .contact-area .social-icon {
+    bottom: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .header-area .nav-item a {
+    font-size: 15px;
+    padding: 6px 12px !important;
+  }
+  .hero-text a {
+    font-size: 15px;
+    padding: 6px 12px !important;
+  }
+  .contact-area .social-icon {
+    bottom: 3px;
+    left: -6px;
+  }
+
+  .work-area .carousel-item img {
+    height: 250px;
+  }
+
+  .carousel-caption {
+    height: 220px;
+  }
+  .work-area .carousel-item .carousel-caption p {
+    font-size: 16px;
+  }
+  .carousel-control-next,
+  .carousel-control-prev {
+    height: 250px;
+  }
+  .work-area .carousel-item {
+    height: 17rem;
+  }
+  .work-area .carousel-item .carousel-caption h1 {
+    font-size: 22px;
+  }
+  .work-area .carousel-dark .carousel-control-prev-icon {
+    height: 25px;
+    width: 25px;
+    margin: 0;
+  }
+  .work-area .carousel-dark .carousel-control-next-icon {
+    height: 25px;
+    width: 25px;
+    margin: 0;
+  }
+
+  .work-area .carousel-item .carousel-caption a {
+    padding: 4px 10px;
+    font-size: 14px;
+  }
+}
